@@ -1,0 +1,135 @@
+/* 전체 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background-color: rgba(205, 179, 179, 0.817);
+  color: #333;
+}
+
+main {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0;
+}
+
+.header {
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;/*수평나열*/
+  justify-content: space-between;/*균등한 간격으로*/
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 0;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 14px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.left-button {
+  font-size: 18px;
+  padding: 12px 20px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.nav-link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  color: skyblue;
+}
+
+.intro {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 2rem;
+  border-radius: 0;
+}
+
+.info-section div {
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-btn{
+  font-size: 12px;
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 14px;
+  border-radius: 9999px;
+}
+
+.header-right-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  display: none;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* chat gpt 돌림 근데 이해 안됨 */
+.search-toggle:checked + label + .search-box {
+  display: inline-block;
+}
